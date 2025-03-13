@@ -3,10 +3,24 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `A passionate and detail-oriented Computer Science graduate from Mercu Buana 
+University with a GPA of 3.62, possessing strong expertise in front-end 
+development, system analysis, and data analysis. With a robust foundation in 
+project management methodologies such as Scrum and SDLC, I excel at designing 
+user-centric products, creating seamless user interfaces, and analyzing complex 
+systems. Proficient in programming languages like PHP, Laravel, JavaScript, and 
+React JS, coupled with hands-on experience in data visualization, machine 
+learning algorithms, and database management (SQL, Oracle). Certified in Scrum, 
+database design, and data science, I bring strong analytical thinking, problem
+solving abilities, and collaborative skills to deliver efficient solutions across 
+diverse technical roles.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const TYPING_STRINGS = [
+  "FrontEnd Developer",
+  "System Analyst"
+];
 
+export const ABOUT_TEXT = "I am a passionate and detail-oriented Computer Science graduate with a strong foundation in front-end development, system analysis, and data visualization. With hands-on experience in project management methodologies like Scrum and SDLC, I excel in designing user-centric applications and optimizing user experiences. My technical expertise includes PHP, Laravel, JavaScript, React JS, SQL, and Oracle, complemented by certifications in Scrum, database design, and data science. Throughout my career, I have contributed to various projects, including web application development, data visualization, and software system analysis. My internship experiences as a Front-End Developer at PT. Sentra Support Service and Inboxed.id have honed my problem-solving skills, teamwork, and adaptability in dynamic environments. Beyond my technical skills, I have actively participated in leadership roles, serving as the Head of Organization Development Division at HIMSISFO and leading various student and community initiatives. I am eager to apply my skills and continuously learn in a growth-oriented organization that values innovation and collaboration";
 export const EXPERIENCES = [
   {
     year: "2023 - Present",
