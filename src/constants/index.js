@@ -2,6 +2,10 @@ import project1 from "../assets/projects/JIS.png";
 import project2 from "../assets/projects/SADEWA.png";
 import project3 from "../assets/projects/Ikadin.png";
 import project4 from "../assets/projects/Inboxed.png";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+export const ROLES = ["FrontEnd Developer", "System Analyst"];
 
 export const HERO_CONTENT = `A passionate and detail-oriented Computer Science graduate from Mercu Buana 
 University with a GPA of 3.62, possessing strong expertise in front-end 
@@ -19,6 +23,32 @@ export const TYPING_STRINGS = [
   "FrontEnd Developer",
   "System Analyst"
 ];
+
+
+
+export const SOCIAL_LINKS = [
+  {
+    name: "LinkedIn",
+    href: "https://linkedin.com/in/naufallafif",
+    icon: FaLinkedin,
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/naufallafif",
+    icon: FaGithub,
+  },
+  {
+    name: "Instagram",
+    href: "https://instagram.com/naufallafif",
+    icon: FaInstagram,
+  },
+  {
+    name: "Twitter",
+    href: "https://twitter.com/",
+    icon: FaXTwitter,
+  },
+];
+
 
 export const ABOUT_TEXT = "I am a passionate and detail-oriented Computer Science graduate with a strong foundation in front-end development, system analysis, and data visualization. With hands-on experience in project management methodologies like Scrum and SDLC, I excel in designing user-centric applications and optimizing user experiences. My technical expertise includes PHP, Laravel, JavaScript, React JS, SQL, and Oracle, complemented by certifications in Scrum, database design, and data science. Throughout my career, I have contributed to various projects, including web application development, data visualization, and software system analysis. My internship experiences as a Front-End Developer at PT. Sentra Support Service and Inboxed.id have honed my problem-solving skills, teamwork, and adaptability in dynamic environments. Beyond my technical skills, I have actively participated in leadership roles, serving as the Head of Organization Development Division at HIMSISFO and leading various student and community initiatives. I am eager to apply my skills and continuously learn in a growth-oriented organization that values innovation and collaboration";
 export const EXPERIENCES = [
