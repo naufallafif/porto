@@ -39,7 +39,7 @@ const About = () => {
           transition={{ duration: 2 }}
           className="w-full lg:w-1/2"
         >
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center lg:justify-center">
             <span className="flex max-w-screen-lg my-2 py-6 text-left font-thin">
               {ABOUT_TEXT}
             </span>
