@@ -23,7 +23,13 @@ const About = () => {
         >
           <div>
             <div className="flex items-center justify-center">
-              <img loading="lazy" className="rounded-2xl" src={aboutMe} alt="" />
+              <img
+                loading="lazy"
+                className="rounded-2xl"
+                src={aboutMe}
+                alt="PP saya"
+                width={400}
+              />
             </div>
           </div>
         </motion.div>

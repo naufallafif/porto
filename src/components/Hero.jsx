@@ -64,7 +64,7 @@ const Hero = () => {
               className="rounded-2xl"
               src={profilePic}
               alt="Naufal Afif"
-              width={450}
+              width={370}
             />
           </div>
         </div>
