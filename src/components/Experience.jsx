@@ -1,11 +1,20 @@
 import React from "react";
 import { EXPERIENCES } from "../constants";
-
+import { motion } from "framer-motion";
 const Experience = () => {
   return (
     <div className="border-b border-neutral-500 pb-4">
-      <h2 className="my-10 text-4xl text-center">Experience</h2>
-      <div>
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1}}
+        className="my-10 text-4xl text-center font-thin"
+      >
+        Experience
+      </motion.h2>
+      <motion.div whileInView={{ opacity: 1, x: 100 }}
+          initial={{ opacity: 0, x: 0 }}
+          transition={{ duration: 2 }} >
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="mb-6 flex flex-wrap lg:justify-center">
             <div className="w-full text-center lg:w-1/4 lg:text-left">
@@ -16,7 +25,9 @@ const Experience = () => {
                 {experience.role} -
                 <span className="text-sm"> {experience.company}</span>
               </h6>
-              <p className="mb-4 text-neutral-400 text-left">{experience.description}</p>
+              <p className="mb-4 text-neutral-400 text-left">
+                {experience.description}
+              </p>
               <div className="mb-4 flex flex-wrap justify-center gap-2 lg:justify-start">
                 {experience.technologies.map((tech, index) => (
                   <span
@@ -30,7 +41,7 @@ const Experience = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

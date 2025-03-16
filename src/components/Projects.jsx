@@ -1,21 +1,22 @@
 import React from "react";
 import { PROJECTS } from "../constants";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
-      <h2 className="my-10 text-center text-4xl">Projects</h2>
+      <h2 className="my-10 text-center text-4xl font-thin">Projects</h2>
       <div>
         {PROJECTS.map((project, index) => (
           <div
             key={index}
             className="mb-8 flex flex-wrap justify-center text-center lg:text-left lg:justify-start"
           >
-            <div className="w-full flex justify-center lg:w-1/4 lg:justify-start">
+            <div className="w-full flex justify-start lg:w-1/4 lg:justify-start  lg:mr-6">
               <img
                 src={project.image}
-                width={150}
-                height={150}
+                width={350}
+                height={350}
                 alt={project.title}
                 className="mb-6 rounded"
               />

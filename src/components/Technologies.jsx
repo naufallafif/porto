@@ -1,43 +1,97 @@
-import React from 'react'
+import React from "react";
 import { FaGit, FaJs } from "react-icons/fa";
-import { RiReactjsLine } from 'react-icons/ri'
+import { RiReactjsLine } from "react-icons/ri";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { RiTailwindCssLine } from "react-icons/ri";
 import { FaLaravel } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
 import { SiMysql } from "react-icons/si";
+import { easeIn, motion } from "framer-motion";
 
+const iconVariant = (duration) => ({
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+});
 
 const Technologies = () => {
   return (
     <div className="border-b border-neutral-500">
-        <h1 className="my-10 text-4xl"> Technologies</h1>
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-5">
-          <div className="rounded-2xl border-4 border-neutral-800 my-1 ">
-            <FaJs className='text-5xl  text-yellow-500'/>
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 my-1 ">
-            <RiReactjsLine className='text-5xl  text-cyan-500'/>
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 my-1 ">
-            <FaHtml5 className='text-5xl  text-orange-500'/>
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 my-1 ">
-            <FaCss3 className='text-5xl  text-cyan-500'/>
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 my-1 ">
-            <FaLaravel className='text-5xl  text-red-500'/>
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 my-1 ">
-            <RiTailwindCssLine className='text-5xl  text-cyan-500'/>
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 my-1 ">
-            <SiMysql className='text-5xl  text-white-500'/>
-          </div>
-        </div>
+      <motion.h1
+      whileInView={{ opacity:1, y:0 }}
+      animate= {{ opacity:0, y:-100 }}
+      transition={{ duration:2 }}
+ className="my-10 text-4xl font-thin"> Technologies</motion.h1>
+      <motion.div
+       whileInView={{opacity:1 , x:0 }}
+       initial={{opacity:0 , x:-100 }}
+       transition={{duration:2 }}
+       className="flex flex-wrap items-center justify-center gap-4 mb-5">
+        <motion.div
+          variants={iconVariant(1.5)}
+          initial="inital"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 my-1 "
+        >
+          <FaJs className="text-5xl  text-yellow-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariant(2.5)}
+          initial="inital"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 my-1 "
+        >
+          <RiReactjsLine className="text-5xl  text-cyan-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariant(1.5)}
+          initial="inital"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 my-1 "
+        >
+          <FaHtml5 className="text-5xl  text-orange-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariant(2.5)}
+          initial="inital"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 my-1 "
+        >
+          <FaCss3 className="text-5xl  text-cyan-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariant(1.5)}
+          initial="inital"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 my-1 "
+        >
+          <FaLaravel className="text-5xl  text-red-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariant(2.5)}
+          initial="inital"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 my-1 "
+        >
+          <RiTailwindCssLine className="text-5xl  text-cyan-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariant(1.5)}
+          initial="inital"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 my-1 "
+        >
+          <SiMysql className="text-5xl  text-white-500" />
+        </motion.div>
+      </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Technologies
+export default Technologies;
