@@ -1,49 +1,49 @@
 import aboutMe from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900 pb-10 px-4 sm:px-6 lg:px-16">
+      {/* Title */}
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
-        animate={{ opacity: 0, y: -100 }}
-        transition={{ duration: 2 }}
-        className="my-10 text-center text-4xl font-thin "
+        initial={{ opacity: 0, y: -50 }}
+        transition={{ duration: 1.5 }}
+        className="my-8 text-center text-3xl sm:text-4xl font-thin"
       >
-        About
-        <span className="text-neutral-400 "> Me</span>
+        About<span className="text-neutral-400"> Me</span>
       </motion.h1>
+
+      {/* Kontainer utama */}
       <div className="flex flex-wrap">
+        {/* Bagian Gambar */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 2 }}
-          className="w-full lg:w-1/2 lg:p-8"
+          initial={{ opacity: 0, x: -50 }}
+          transition={{ duration: 1.5 }}
+          className="w-full lg:w-1/2 flex justify-center lg:p-8"
         >
-          <div>
-            <div className="flex items-center justify-center">
-              <img
-                loading="lazy"
-                className="rounded-2xl"
-                src={aboutMe}
-                alt="PP saya"
-                width={400}
-              />
-            </div>
-          </div>
+          <img
+            loading="lazy"
+            className="rounded-2xl   sm:w-80 md:w-96 "
+            width={300}
+            height={300}
+            src={aboutMe}
+            alt="Profile"
+          />
         </motion.div>
+
+        {/* Bagian Teks */}
         <motion.div
-          whileInView={{ opacity: 1, x: 100 }}
-          initial={{ opacity: 0, x: 0 }}
-          transition={{ duration: 2 }}
-          className="w-full lg:w-1/2"
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 50 }}
+          transition={{ duration: 1.5 }}
+          className="w-full lg:w-1/2 flex justify-center lg:justify-start"
         >
-          <div className="flex justify-center lg:justify-center">
-            <span className="flex max-w-screen-lg my-2 py-6 text-left font-thin">
-              {ABOUT_TEXT}
-            </span>
-          </div>
+          <p className="max-w-screen-md my-4 text-center lg:text-left text-base sm:text-lg font-thin leading-relaxed">
+            {ABOUT_TEXT}
+          </p>
         </motion.div>
       </div>
     </div>
