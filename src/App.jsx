@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Technologies from './components/Technologies'
 import Experience from './components/Experience'
+import Projects from './components/Projects'
 const App = () => {
   return (
     <div className='overflow-x-hidden text-neutral-100 antialiased selection:bg-indigo-700 selection:text-white-100'>
@@ -18,6 +19,7 @@ const App = () => {
         <About/>
         <Technologies/>
         <Experience/>
+        <Projects/>
       </div>
       </div>
 )
