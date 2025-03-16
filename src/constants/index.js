@@ -23,33 +23,20 @@ export const TYPING_STRINGS = [
 export const ABOUT_TEXT = "I am a passionate and detail-oriented Computer Science graduate with a strong foundation in front-end development, system analysis, and data visualization. With hands-on experience in project management methodologies like Scrum and SDLC, I excel in designing user-centric applications and optimizing user experiences. My technical expertise includes PHP, Laravel, JavaScript, React JS, SQL, and Oracle, complemented by certifications in Scrum, database design, and data science. Throughout my career, I have contributed to various projects, including web application development, data visualization, and software system analysis. My internship experiences as a Front-End Developer at PT. Sentra Support Service and Inboxed.id have honed my problem-solving skills, teamwork, and adaptability in dynamic environments. Beyond my technical skills, I have actively participated in leadership roles, serving as the Head of Organization Development Division at HIMSISFO and leading various student and community initiatives. I am eager to apply my skills and continuously learn in a growth-oriented organization that values innovation and collaboration";
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "Jun 2023 - Oct 2023",
+    role: "Frontend Developer as Internship",
+    company: "Inboxed.id",
+    description: `Translate design mockups and wireframes certification application into high-quality front-end code using using PHP, HTML, CSS, JavaScript, and Bootstrap. Optimize web applications for speed, scalability, and accessibility across platforms and devices. Collaborate with backend developers to define and implement APIs for data-driven functionalities. Use version control systems (like Git) to manage code and collaborate efficiently within teams. Participate in agile development processes, including daily stand-ups, sprint planning, and retrospectives to improve workflow and team communication.`,
+    technologies: ["PhP","HTML", "CSS", "JS", "Bootstrap", "Laravel", "Agile Development"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "Jan 2023 - Jun 2023",
+    role: "Frontend Developer as Internship",
+    company: "PT. SENTRA SUPPORT SERVICE",
+    description: `Develop and maintain responsive IKADIN application, with user-friendly web interfaces using PHP,Laravel, HTML, CSS, JavaScript, and Bootstrap. Collaborate with UI/UX designers to implement visually appealing and intuitive designs. Ensure cross-browser compatibility and optimize performance for seamless user experience. Integrate front-end code with back-end services and APIs. Troubleshoot and debug front-end issues to ensure smooth functionality. Participate in code reviews and contribute to improving development practices and standards. Stay updated with the latest front-end technologies and industry trends for continuous improvement.`,
+    technologies: ["PhP","HTML", "CSS", "JS", "Bootstrap", "Laravel", "Agile Development"],
   },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+  
 ];
 
 export const PROJECTS = [
