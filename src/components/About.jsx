@@ -26,7 +26,7 @@ const About = () => {
         >
           <img
             loading="lazy"
-            className="rounded-2xl   sm:w-80 md:w-96 "
+            className="rounded-2xl sm:w-80 md:w-full w-20"
             width={300}
             height={300}
             src={aboutMe}
