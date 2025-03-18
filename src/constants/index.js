@@ -77,13 +77,7 @@ export const PROJECTS = [
       "Student Value Data Visualization Using Google Looker - Jakarta Intercultural School.",
     technologies: ["Agile Methodologies", "Google Looker", "Black Box Testing", "Project Managment"],
   },
-  {
-    title: "Application Web Based",
-    image: project2,
-    description:
-      "Designing and Developing an application for a national-level competition named Smart Dashboard Environment Warning Application (SADEWA) - GEMASTIK XV",
-    technologies: ["HTML", "CSS", "JS"],
-  },
+
   {
     title: "Certification and Training Website ",
     image: project3,

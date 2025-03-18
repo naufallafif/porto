@@ -2,28 +2,27 @@ import { useState, useEffect } from "react";
 import { ROLES } from "../constants";
 
 const Roles = () => {
-  const [index, setIndex] = useState(0); // Indeks peran saat ini
-  const [text, setText] = useState(""); // Teks yang sedang diketik
-  const [isDeleting, setIsDeleting] = useState(false); // Mode hapus atau ketik
-  const [speed, setSpeed] = useState(150); // Kecepatan efek ketik/hapus
-
+  const [index, setIndex] = useState(0); 
+  const [text, setText] = useState(""); 
+  const [isDeleting, setIsDeleting] = useState(false); 
+  const [speed, setSpeed] = useState(150); 
   useEffect(() => {
     const currentRole = ROLES[index];
 
     const updateText = () => {
       if (isDeleting) {
         setText((prev) => prev.slice(0, -1));
-        setSpeed(50); // Kecepatan saat menghapus
+        setSpeed(50); 
       } else {
         setText((prev) => currentRole.slice(0, prev.length + 1));
-        setSpeed(150); // Kecepatan saat mengetik
+        setSpeed(150); 
       }
 
       if (!isDeleting && text === currentRole) {
-        setTimeout(() => setIsDeleting(true), 1000); // Tunggu sebelum hapus
+        setTimeout(() => setIsDeleting(true), 1000);hapus
       } else if (isDeleting && text === "") {
         setIsDeleting(false);
-        setIndex((prevIndex) => (prevIndex + 1) % ROLES.length); // Ganti role
+        setIndex((prevIndex) => (prevIndex + 1) % ROLES.length);
       }
     };
 

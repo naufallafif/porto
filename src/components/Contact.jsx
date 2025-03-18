@@ -78,7 +78,6 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex flex-col gap-4"
           >
-            {/* Input Nama */}
             <motion.input
               whileFocus={{ scale: 1.02, borderColor: "#9333ea" }}
               type="text"
