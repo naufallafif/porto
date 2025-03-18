@@ -36,7 +36,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden max-w-full text-neutral-100 antialiased selection:bg-indigo-700 selection:text-white-100">
+    <div className="overflow-x-hidden max-w-full text-neutral-100 antialiased selection:bg-purple-500 selection:text-white-100">
       {loading ? (
         <div className="fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-indigo-900 z-50">
           <InfinitySpin width="200" color="#4F46E5" />
