@@ -121,7 +121,7 @@ const Contact = () => {
             className={`w-full p-3 rounded font-semibold transition ${
               isValid
                 ? "bg-purple-700 hover:bg-purple-600 text-white"
-                : "bg-gray-600 text-gray-400 cursor-not-allowed"
+                : "bg-purple-600 text-gray-400 cursor-not-allowed"
             }`}
             disabled={!isValid}
           >
