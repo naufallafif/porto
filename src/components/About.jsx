@@ -5,7 +5,7 @@ import SplitText from "./SplitText/SplitText";
 
 const About = () => {
   return (
-    <div className="border-b border-neutral-900 pb-10 px-4 sm:px-6 lg:px-16">
+    <div className="border-b border-neutral-500 pb-10 px-4 sm:px-6 lg:px-16">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -50 }}

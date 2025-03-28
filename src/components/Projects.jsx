@@ -15,7 +15,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="border-b border-neutral-900 pb-4"
+      className=" border-b border-neutral-500 pb-4"
     >
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}

@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="font-thin mt-3 sticky ">
+    <div className="font-thin mt-3  rounded-xl ">
         Copyright 2025. All rights reserved. <br />
         <p className="font-semibold text-purple-500">Naufal Afif</p>
     </div>
