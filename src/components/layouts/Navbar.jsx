@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import logo from "../assets/NaufalLogo.png";
-import { SOCIAL_LINKS } from "../constants";
+import logo from '../layouts/NaufalLogo.png'
+import { SOCIAL_LINKS } from "../../constants";
 
 const Navbar = () => {
   return (

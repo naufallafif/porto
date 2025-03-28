@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 import { InfinitySpin } from "react-loader-spinner";
 import Lenis from "@studio-freight/lenis"; 
 import "../App.css";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/layouts/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Technologies from "../components/Technologies";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import { Footer } from "../components/layouts/Footer";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -58,6 +59,7 @@ const App = () => {
             <Experience />
             <Projects />
             <Contact />
+            <Footer />
           </div>
         </>
       )}

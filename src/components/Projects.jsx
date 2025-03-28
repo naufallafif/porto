@@ -34,7 +34,7 @@ const Projects = () => {
         className="mySwiper"
       >
         {PROJECTS.map((project, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="mb-10">
             <motion.div
               className="flex flex-col items-center cursor-pointer"
               onClick={() =>
@@ -70,7 +70,7 @@ const Projects = () => {
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="rounded bg-purple-900 px-2 py-1 text-sm font-medium text-white mb-5"
+                        className="rounded bg-purple-900 px-2 py-1 text-sm font-medium text-white "
                       >
                         {tech}
                       </span>
