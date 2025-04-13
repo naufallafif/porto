@@ -10,6 +10,7 @@ import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import { Footer } from "../components/layouts/Footer";
+import Calendar from "../components/Calendar";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -55,6 +56,7 @@ const App = () => {
             <Navbar />
             <Hero />
             <About />
+            <Calendar/>
             <Technologies />
             <Experience />
             <Projects />
