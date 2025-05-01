@@ -27,7 +27,7 @@ const data = [
           
         >
           <motion.img
-          whileHover={{ scale: 1.2, rotate:2, cursor:pointer }}
+          whileHover={{ scale: 1.2, rotate:2}}
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
@@ -211,7 +211,7 @@ const App = () => {
             <Hero />
             <About />
             <Calendar />
-            <Timeline data={data} />
+            {/* <Timeline data={data} /> */}
 
             <Technologies />
             {/* <Experience /> */}
