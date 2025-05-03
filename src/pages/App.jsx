@@ -13,48 +13,69 @@ import { Footer } from "../components/layouts/Footer";
 import Calendar from "../components/Calendar";
 import { Timeline } from "../components/Timeline/Timeline";
 import { motion } from "motion/react";
-import IkadinImage from "../assets/projects/Ikadin.png";
-
+import kartar from "../assets/Changelog/eventkartar.JPG"
+import sadewa from "../assets/Changelog/sadewa.png"
+import mubes from "../assets/Changelog/leadmeet.jpg"
+import team from "../assets/Changelog/team.jpg"
 
 const data = [
   {
-    title: "2024",
+    title: "2022",
     content: (
-      <div>
+      <div className="px-21">
+        <h1 className="text-2xl mb-2">
+          Growing in Leadership.
+        </h1>
+        <p className="mb-8 text-xs font-thin  md:text-sm ">
+        In 2022, I took a big step in organizational leadership by leading a division and participating in a national competition, GEMASTIK XV, with the Smart City Division as a Front-End Developer. And Head Presidency of general assembly meeting at the Information Systems Association (HIMSISFO)
+        </p>
         <p className="mb-8 text-xs font-normal  md:text-sm ">
-          Built and launched Aceternity UI and Aceternity UI Pro from scratch
+        Image Activities :
+
         </p>
         <motion.div
           className="grid grid-cols-2 gap-4"
           
         >
           <motion.img
-          whileHover={{ scale: 1.2, rotate:2}}
+          whileHover={{ scale: 2, rotate:2}}
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-            src={IkadinImage}
+            src={kartar}
             alt="startup template"
             width={500}
             height={500}
             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
           />
-          <img
-            src="https://assets.aceternity.com/templates/startup-2.webp"
+          <motion.img
+          whileHover={{ scale: 2, rotate:2}}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+            src={sadewa}
             alt="startup template"
             width={500}
             height={500}
             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
           />
-          <img
-            src="https://assets.aceternity.com/templates/startup-3.webp"
+         <motion.img
+          whileHover={{ scale: 2, rotate:2}}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+            src={mubes}
             alt="startup template"
             width={500}
             height={500}
             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
           />
-          <img
-            src="https://assets.aceternity.com/templates/startup-4.webp"
+         <motion.img
+          whileHover={{ scale: 2, rotate:2}}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+            src={team}
             alt="startup template"
             width={500}
             height={500}
@@ -174,7 +195,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   useEffect(() => {
@@ -214,7 +235,6 @@ const App = () => {
             <About />
             <Calendar />
             <Timeline data={data} />
-
             <Technologies />
             <Experience />
             <Projects />
