@@ -13,6 +13,8 @@ import { Footer } from "../components/layouts/Footer";
 import Calendar from "../components/Calendar";
 import { Timeline } from "../components/Timeline/Timeline";
 import { motion } from "motion/react";
+import IkadinImage from "../assets/projects/Ikadin.png";
+
 
 const data = [
   {
@@ -31,7 +33,7 @@ const data = [
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-            src="https://assets.aceternity.com/templates/startup-1.webp"
+            src={IkadinImage}
             alt="startup template"
             width={500}
             height={500}
@@ -211,10 +213,10 @@ const App = () => {
             <Hero />
             <About />
             <Calendar />
-            {/* <Timeline data={data} /> */}
+            <Timeline data={data} />
 
             <Technologies />
-            {/* <Experience /> */}
+            <Experience />
             <Projects />
             <Contact />
             <Footer />

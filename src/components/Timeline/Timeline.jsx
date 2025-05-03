@@ -30,9 +30,9 @@ export const Timeline = ({ data }) => {
       className="w-full  font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-5 px-2 md:px-8 lg:px-10">
-        <motion.h2 className="text-lg md:text-4xl font-thin ">
-          Changelog from My Journey
+      <div className="max-w-7xl mx-auto px-2 md:px-8 lg:px-10">
+        <motion.h2 className="text-4xl md:text-4xl sm:py-10 font-thin ">
+          Experience
         </motion.h2>
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
