@@ -21,8 +21,14 @@ import ketuplak from "../assets/Changelog/ketuplak.jpeg";
 import mentor from "../assets/Changelog/mentor.png";
 import speaker from "../assets/Changelog/speaker.jpg";
 import struktur from "../assets/Changelog/struktur.png";
-import asisten from "../assets/Changelog/asisten.jpg";
-
+import jis1 from "../assets/Changelog/JIS.jpg";
+import jis2 from "../assets/Changelog/JIS2.jpg";
+import asesor1 from "../assets/Changelog/asesor.jpg";
+import grad from "../assets/Changelog/graduate.jpg";
+import bot from "../assets/Changelog/bot.png";
+import hacktiv from "../assets/Changelog/hacktiv.jpg"
+import hacktiv2 from "../assets/Changelog/hacktiv2.jpg"
+import porto from "../assets/Changelog/portfolio.png"
 const data = [
   {
     title: "2022",
@@ -100,7 +106,7 @@ const data = [
           Served in various leadership and mentorship roles, including as Chief
           Executive of the Student Leadership Management Training (LKMM) at the
           Information Systems Association, Speaker at a community service event
-          on "Microsoft Office and Canva for MSMEs," Mentor for Intermediate and
+          on "Microsoft Office and Canva for UMKM" Mentor for Intermediate and
           Basic Leadership Trainings under the Faculty of Computer Science and
           new student programs, Assistant Instructor at Jakarta Intercultural
           School, and Chairperson of the General Assembly at the Information
@@ -164,7 +170,7 @@ const data = [
     content: (
       <div className="px-21">
         <h1 className="text-2xl mb-2">
-        Developing Professional Skills and Achieving Academic Milestones.
+          Developing Professional Skills and Achieving Academic Milestones.
         </h1>
         <p className="mb-8 text-xs font-thin  md:text-sm ">
           In 2024, I participated in an accreditation assessor training held by
@@ -185,7 +191,7 @@ const data = [
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
-            src={ketuplak}
+            src={jis1}
             alt="startup template"
             width={500}
             height={500}
@@ -196,7 +202,7 @@ const data = [
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
-            src={mentor}
+            src={asesor1}
             alt="startup template"
             width={500}
             height={500}
@@ -207,7 +213,7 @@ const data = [
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
-            src={struktur}
+            src={jis2}
             alt="startup template"
             width={500}
             height={500}
@@ -218,7 +224,81 @@ const data = [
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
-            src={speaker}
+            src={grad}
+            alt="startup template"
+            width={500}
+            height={500}
+            className="mb-20 h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+        </motion.div>
+      </div>
+    ),
+  },
+
+  {
+    title: "2025 Early",
+    content: (
+      <div className="px-21">
+        <h1 className="text-2xl mb-2">
+          Investing in Continuous Learning and Building Impactful Personal
+          Projects
+        </h1>
+        <p className="mb-8 text-xs font-thin  md:text-sm ">
+          I committed myself to continuous learning by joining a free Fullstack
+          JavaScript Bootcamp organized by Hacktiv8. This intensive training
+          allowed me to deepen my understanding of modern web technologies,
+          focusing especially on React for component-based development and
+          Tailwind CSS for efficient styling. As part of this journey, I
+          enhanced my personal portfolio to reflect improved UI/UX principles
+          and a more polished frontend experience. In addition, I built a
+          Telegram Bot integrated with Google Apps Script and Google Sheets,
+          enabling real-time data interaction. The project allowed users to
+          input, read, and update spreadsheet data directly through Telegram,
+          showcasing automation and scripting capabilities.
+        </p>
+        <p className="mb-8 text-xs font-normal  md:text-sm ">
+          Image Activities :
+        </p>
+        <motion.div className="grid grid-cols-2 gap-4">
+          <motion.img
+            whileHover={{ scale: 1.2, rotate: 2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            src={bot}
+            alt="startup template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <motion.img
+            whileHover={{ scale: 1.2, rotate: 2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            src={hacktiv}
+            alt="startup template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <motion.img
+            whileHover={{ scale: 1.2, rotate: 2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            src={hacktiv2}
+            alt="startup template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <motion.img
+            whileHover={{ scale: 1.2, rotate: 2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            src={porto}
             alt="startup template"
             width={500}
             height={500}
