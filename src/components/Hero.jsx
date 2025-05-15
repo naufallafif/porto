@@ -40,16 +40,16 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter text-left"
+              className="my-4 text-center lg:text-left text-base sm:text-lg font-thin leading-relaxed"
             >
               {HERO_CONTENT}
             </motion.p>
           </div>
         </div>
 
-        <div className="hidden lg:block w-full lg:w-1/2 lg:p-8">
+        <div className="hidden lg:block w-9/12 lg:w-1/2 lg:p-8 ">
           <div className="flex justify-center min-h-screen overflow-x-hidden">
-            <Lanyard position={[2, 0, 12]} />
+            <Lanyard position={[1, 0, 12]} />
           </div>
         </div>
       </div>
